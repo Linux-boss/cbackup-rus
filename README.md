@@ -17,20 +17,21 @@ cBackup [siː ˈbækʌp] — это инструмент резервного к
 
 Please refer to [detailed installation description in the official documenation](http://cbackup.readthedocs.io/en/latest/getting-started/install/).
 
-# Essentials and system requirements
+# Системные требования
 
-cBackup is intended for usage in Linux environment. It consists of two parts: web interface and multithreaded Java daemon. We recommend dedicated standalone appliance due to relatively high demand on resources. Brief system requirements are:
-* Linux server
-* Web server (Apache, NGinx)
-* PHP 7.0 or newer
+cBackup предназначен для использования в среде Linux. Он состоит из двух частей: веб-интерфейс и мультипотоковый Java-демон. Мы рекомендуем использовать отдельный сервер (виртуальная машина или физический) из-за высокого спроса на ресурсы. 
+Системные требования:
+* Linux-сервер (CentOS 6,7 или Debian/Ubuntu)
+* Веб-сервер (Apache, NGinx)
+* PHP 7.0 или новее
 * Java 8, JRE
-* MySQL 5.5 or newer (or compatible MariaDB, Percona, etc)
-* Git 1.8 or newer
+* MySQL 5.5 или новее (или совместимые MariaDB, Percona и т.д)
+* Git 1.8 или новее
 * NetSNMP
 * OpenSSH
 * libCurl
 
-# License
+# Лицензия
 
-Published under the GNU Affero General Public License (AGPLv3)<br>
+Опубликовано под GNU Affero General Public License (AGPLv3)<br>
 Copyright 2017 © cBackup Team: Oļegs Čapligins, Imants Černovs, Dmitrijs Galočkins  
