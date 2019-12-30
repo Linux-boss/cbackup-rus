@@ -5,9 +5,8 @@
 [![Documentation Status](https://readthedocs.org/projects/cbackup/badge/?version=latest)](http://cbackup.readthedocs.org)
 [![Website](https://img.shields.io/website-up-down-brightgreen-red/http/cbackup.me.svg?label=website)](http://cbackup.me)
 
-cBackup [siː ˈbækʌp] — free open source network equipment configuration backup tool.
-
-# Features
+cBackup [siː ˈbækʌp] — свободное программное обеспечение с открытым исходным кодом, предназначенное для резервного копирования конфигурации сетевого оборудования.
+# Возможности
 
 * Scheduled network devices configuration backups
 * Version control for configuration changes tracking
