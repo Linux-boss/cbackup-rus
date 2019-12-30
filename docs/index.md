@@ -14,29 +14,29 @@ cBackup [siː ˈbækʌp] — свободное программное обес�
 * Multithreaded highly efficient java daemon
 * Standalone privacy abiding deployment
 
-# System requirements
+# Системные требования
 
-* Linux server
-* Web server
+* Linux-сервер (CentOS 6,7 или Debian/Ubuntu)
+* Веб-сервер (Apache, NGinx)
 * Java 8, JRE
-* MySQL 5.5 or newer (or compatible MariaDB, Percona, etc)
-* Git 1.8 or newer
+* MySQL 5.5 или новее (или совместимые MariaDB, Percona и т.д)
+* Git 1.8 или новее
 * NetSNMP
 * OpenSSH
 * libCurl
-* PHP 7.0 or newer with necessary modules: _ctype, curl, gmp, intl, mbstring. mysqlnd, openssl, pcre, PDO, pdo_mysql, Reflection, snmp, SPL, SSH2, zip_
+* PHP 7.0 или новее с необходимыми модулями: ctype, curl, gmp, intl, mbstring. mysqlnd, openssl, pcre, PDO, pdo_mysql, Reflection, snmp, SPL, SSH2, zip
 
-# Downloads
+# Загрузки
 
-Title | Type | Link and version
+Описание | Дистрибутив | Ссылка на последнюю версию
 --------- | --------- | ---------
-Stable release, archive | TAR.GZ | [cbackup-1.0.0.tar.gz](http://cbackup.me/latest)
-Stable release, CentOS 7 RPM | RPM | [cbackup-1.0.0-1.el7.noarch.rpm](http://cbackup.me/latest?package=rpm&sub=el7)
-Stable release, CentOS 6 RPM | RPM | [cbackup-1.0.0-1.el6.noarch.rpm](http://cbackup.me/latest?package=rpm&sub=el6)
-Stable release, Ubuntu 16 LTS | DEB | [cbackup-1.0.0.deb](http://cbackup.me/latest?package=deb)
-Debug/devel release | TAR.GZ | [cbackup-1.0.0-debug-release.tar.gz](http://cbackup.me/latest?package=debug&sub=release)
+Стабильный релиз | Archive | [cbackup.tar.gz](http://cbackup.me/latest)
+Стабильный релиз | CentOS 7, RPM | [cbackup.el7.noarch.rpm](http://cbackup.me/latest?package=rpm&sub=el7)
+Стабильный релиз | CentOS 6, RPM | [cbackup.el6.noarch.rpm](http://cbackup.me/latest?package=rpm&sub=el6)
+Стабильный релиз | Ubuntu/Debian, DEB | [cbackup.deb](http://cbackup.me/latest?package=deb)
+Бета-версия | Archive | [cbackup_debug-release.tar.gz](http://cbackup.me/latest?package=debug&sub=release)
 
-# Community and support
+# Сообщество и поддержка
 
 * Issues can be reported to [Github](https://github.com/cBackup/main/issues) directly or via [forum](http://cbackup.me/forum);
 * For support you can check [cBackup official website](http://cbackup.me) and [discord](http://cbackup.me/discord);
