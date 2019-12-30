@@ -4,14 +4,14 @@ cBackup использует протоколы SNMP, Telnet и SSH для св�
 
 Сам cBackup состоит из двух частей: веб-интерфейса и демона. Веб-интерфейс написан на PHP фреймворке [Yii2 framework](http://www.yiiframework.com), а демон - это приложение Java Spring, работающее в качестве системной службы. Демон общяется с web-ядром cBackup через REST API по протоколу HTTP.
 
-# Key terms
+# Ключевые термины
 
 <div id="teminology-table"></div>
 
 _Term_ | _Definition_
 ------------ | -------------
-Node | End unit of network equipment, a subject to configuration backup process. Most often **nodes** are represented by switches and routers of different classes.
-Device | Class or group of network equipment described in terms of vendor and model. To each device there's an **authentication template** assigned. 
+Узел | Сетевое оборудование, объект конфигурация которого подлежит резервному копированию. Чаще всего **узел** это коммутатор или маршрутизатор различных классов.
+Устройство | Класс или группа сетевого оборудования с описанием значений производителя и модели устройства. Для каждого устройства назначается **Шаблон аутентификации**
 Authentication template | Sequence of prompts and responses representing authentication sequence for communication via Telnet. Every template can be assigned to any **device**. There're several macros available (e.g. {{telnet_login}}, {{telnet_password}}) representing corresponding data from **credentials**.<br><br><div class="warning">**⚠ Warning!**<br>For communication via SSH all macros will be ignored and initial SSH login and password are retrieved from credentials directly. Rest of the sequence is still used to send privileged mode password if it's required. See [authentiaction documentation](../administrators-guide/authentication) for full information.</div>
 Network | Simple subnet of any class, defined in CIDR format. To each subnet particular **credentials** are assigned. 
 Credentials | Set of authentication data (logins, passwords, protocols, port numbers, etc) that is used in authentication processes. Credentials set can be assigned to any number of subnets and will be used in numerous cBackup processes.
