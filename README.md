@@ -20,7 +20,7 @@ Please refer to [detailed installation description in the official documenation]
 # Системные требования
 
 cBackup предназначен для использования в среде Linux. Он состоит из двух частей: веб-интерфейс и мультипотоковый Java-демон. Мы рекомендуем использовать отдельный сервер (виртуальная машина или физический) из-за высокого спроса на ресурсы. 
-Системные требования:
+<br>Системные требования:
 * Linux-сервер (CentOS 6,7 или Debian/Ubuntu)
 * Веб-сервер (Apache, NGinx)
 * PHP 7.0 или новее
@@ -34,4 +34,5 @@ cBackup предназначен для использования в среде
 # Лицензия
 
 Опубликовано под GNU Affero General Public License (AGPLv3)<br>
-Copyright 2017 © cBackup Team: Oļegs Čapligins, Imants Černovs, Dmitrijs Galočkins  
+Copyright 2017 © cBackup Team: Oļegs Čapligins, Imants Černovs, Dmitrijs Galočkins
+<br>Перевел на русский язык [Linux-boss](https://github.com/Linux-boss). Перевод опубликован на сайте [Network Lion](https://network-lion.ru/)
