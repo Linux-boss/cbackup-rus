@@ -1,8 +1,8 @@
 # Concept
 
-cBackup utilizes SNMP, Telnet and SSH protocols to communitcate with devices and to retrieve data from nodes. SNMP is used for node discovery and polling processes. It is possible to use only Telnet or SSH to backup nodes, but SNMP provides more verbose data for node management.
+cBackup использует протоколы SNMP, Telnet и SSH для связи с устройствами и для извлечения данных из узлов. SNMP используется для процессов обнаружения и опроса узлов. Резервное копирование узлов возможно только через протокол Telnet или SSH, однако SNMP предоставляет более подробные данные для управления узлами.
 
-cBackup itself consists of two parts: **web interface** and **daemon**. Web interface is written in PHP on top of [Yii2 framework](http://www.yiiframework.com) and daemon is a Java Spring application running as system service. Daemon communicates with cBackup web core via REST API (via HTTP protocol), so theoretically it can be run in the separate environment. 
+Сам cBackup состоит из двух частей: веб-интерфейса и демона. Веб-интерфейс написан на PHP на фреймворке [Yii2 framework](http://www.yiiframework.com), а демон - это приложение Java Spring, работающее в качестве системной службы. Демон общяется с web-ядром cBackup через REST API по протоколу HTTP.
 
 # Key terms
 
