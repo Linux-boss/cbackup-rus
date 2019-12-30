@@ -18,7 +18,9 @@ _Term_ | _Definition_
 Обнаружение | Процесс проверки узлов во всех указанных подсетях. Обнаруживаются новые узлы, а существующие проверяются на наличие изменений (например, если модель устройства была изменена).
 Демон | Главный демон cBackup с внутренним планировщиком заданий - это исполняемый файл .JAR. Он управляет процессами обнаружения, опроса и получения необходимых данных конфигурации. Общается с web-ядром cBackup через REST API.
 Расписание | cBackup использует собственный планировщик заданий и не зависит от системного планировщика cron. Вы сможете запланировать системные задачи и настроить отправку отчетов через электронную почту. Каждое запланированное событие = одной задаче.
-Task | Particular task itself that could be assigned to nodes or devices. Task consists of **workers**.
+Задача | Конкретное задание, которая может быть назначено узлам или устройствам. Задача состоит из **обработок**.
+Обработка | Установленные команды 
+
 Worker | Set of commands intended for specific functionality processing. Primarily worker is described by protocol and consists of **jobs' sequence**
 Job | Specific command (Telnet or SSH depending on **worker's** protocol). Also can be SNMP OID if worker, which contains this job works over SNMP protocol. 
 
