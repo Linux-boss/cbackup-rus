@@ -2,7 +2,7 @@
 
 cBackup использует протоколы SNMP, Telnet и SSH для связи с устройствами и для извлечения данных из узлов. SNMP используется для процессов обнаружения и опроса узлов. Резервное копирование узлов возможно только через протокол Telnet или SSH, однако SNMP предоставляет более подробные данные для управления узлами.
 
-Сам cBackup состоит из двух частей: веб-интерфейса и демона. Веб-интерфейс написан на PHP фреймворке [Yii2 framework](http://www.yiiframework.com), а демон - это приложение Java Spring, работающее в качестве системной службы. Демон общяется с web-ядром cBackup через REST API по протоколу HTTP.
+Сам cBackup состоит из двух частей: веб-интерфейса и демона. Веб-интерфейс написан на PHP фреймворке [Yii2 framework](http://www.yiiframework.com), а демон - это приложение Java Spring, работающее в качестве системной службы. Демон общается с web-ядром cBackup через REST API по протоколу HTTP.
 
 # Ключевые термины
 
@@ -16,8 +16,8 @@ _Term_ | _Definition_
 Подсеть | Простая подсеть любого класса определенного в CIDR формате. Для каждой подсети указываются определенные **реквизиты**. 
 Реквизиты | Указанные данные для аутентификации (имена пользователей, пароли, протоколы, номера портов и т.д), которые используются в процессе аутентификации. Реквизиты могут быть назначены любому количеству подсетей и использоваться в многочисленных процессах cBackup.
 Обнаружение | Процесс проверки узлов во всех указанных подсетях. Обнаруживаются новые узлы, а существующие проверяются на наличие изменений (например, если модель устройства была изменена).
-Daemon | cBackup main daemon with internal scheduler. Physically it's executable .JAR file. It handles processes of discovery, polling and required configuration data retrieving. Communicates with cBackup web core via REST API.
-Schedule | cBackup doesn't rely on system cron and utilizes its' own scheduler. You can schedule system tasks or reporting via email. Each schedule represents one task, so in other words _you schedule a task_.
+Демон | Главный демон cBackup с внутренним планировщиком заданий - это исполняемый файл .JAR. Он управляет процессами обнаружения, опроса и получения необходимых данных конфигурации. Общается с web-ядром cBackup через REST API.
+Расписание | cBackup использует собственный планировщик заданий и не зависит от системного планироващика cron. Вы можете запланировать системные задачи и настроить отправку отчетов через электронную почту. Каждое запланированное событие = одной задаче.
 Task | Particular task itself that could be assigned to nodes or devices. Task consists of **workers**.
 Worker | Set of commands intended for specific functionality processing. Primarily worker is described by protocol and consists of **jobs' sequence**
 Job | Specific command (Telnet or SSH depending on **worker's** protocol). Also can be SNMP OID if worker, which contains this job works over SNMP protocol. 
